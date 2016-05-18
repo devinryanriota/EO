@@ -16,7 +16,7 @@ namespace EO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmJatuhTempo());
+            Application.Run(new frmRancangCustomer());
         }
     }
 }
