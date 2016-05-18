@@ -32,27 +32,27 @@
             this.lblHeader = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gpbKontrakKerja = new System.Windows.Forms.GroupBox();
+            this.txtTglJatuhTempo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtTotalBiaya = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboSuratKontrak = new System.Windows.Forms.ComboBox();
             this.lblIDCustomer = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTglJatuhTempo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtDenda = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtTagihan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPembayaran = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDenda = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.gpbOperation = new System.Windows.Forms.GroupBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.gpbKontrakKerja.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,10 +102,40 @@
             this.gpbKontrakKerja.TabStop = false;
             this.gpbKontrakKerja.Text = "Surat Kontrak Kerja";
             // 
+            // txtTglJatuhTempo
+            // 
+            this.txtTglJatuhTempo.Location = new System.Drawing.Point(200, 82);
+            this.txtTglJatuhTempo.Name = "txtTglJatuhTempo";
+            this.txtTglJatuhTempo.ReadOnly = true;
+            this.txtTglJatuhTempo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTglJatuhTempo.Size = new System.Drawing.Size(314, 24);
+            this.txtTglJatuhTempo.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(37, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Tanggal Jatuh Tempo";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(197, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "RP.";
+            // 
             // txtTotalBiaya
             // 
             this.txtTotalBiaya.Location = new System.Drawing.Point(248, 51);
             this.txtTotalBiaya.Name = "txtTotalBiaya";
+            this.txtTotalBiaya.ReadOnly = true;
             this.txtTotalBiaya.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTotalBiaya.Size = new System.Drawing.Size(266, 24);
             this.txtTotalBiaya.TabIndex = 7;
@@ -127,6 +157,7 @@
             this.cboSuratKontrak.Name = "cboSuratKontrak";
             this.cboSuratKontrak.Size = new System.Drawing.Size(314, 26);
             this.cboSuratKontrak.TabIndex = 5;
+            this.cboSuratKontrak.SelectedIndexChanged += new System.EventHandler(this.cboSuratKontrak_SelectedIndexChanged);
             // 
             // lblIDCustomer
             // 
@@ -137,34 +168,6 @@
             this.lblIDCustomer.Size = new System.Drawing.Size(137, 16);
             this.lblIDCustomer.TabIndex = 4;
             this.lblIDCustomer.Text = "ID Surat Kontrak Kerja";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "RP.";
-            // 
-            // txtTglJatuhTempo
-            // 
-            this.txtTglJatuhTempo.Location = new System.Drawing.Point(200, 82);
-            this.txtTglJatuhTempo.Name = "txtTglJatuhTempo";
-            this.txtTglJatuhTempo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTglJatuhTempo.Size = new System.Drawing.Size(314, 24);
-            this.txtTglJatuhTempo.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Tanggal Jatuh Tempo";
             // 
             // groupBox2
             // 
@@ -185,10 +188,39 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pembayaran";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(197, 89);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(30, 16);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "RP.";
+            // 
+            // txtDenda
+            // 
+            this.txtDenda.Location = new System.Drawing.Point(246, 84);
+            this.txtDenda.Name = "txtDenda";
+            this.txtDenda.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDenda.Size = new System.Drawing.Size(268, 24);
+            this.txtDenda.TabIndex = 13;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(37, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 16);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Denda";
+            // 
             // txtTagihan
             // 
             this.txtTagihan.Location = new System.Drawing.Point(246, 19);
             this.txtTagihan.Name = "txtTagihan";
+            this.txtTagihan.ReadOnly = true;
             this.txtTagihan.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTagihan.Size = new System.Drawing.Size(268, 24);
             this.txtTagihan.TabIndex = 11;
@@ -241,34 +273,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Jumlah Tagihan";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(197, 89);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 16);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "RP.";
-            // 
-            // txtDenda
-            // 
-            this.txtDenda.Location = new System.Drawing.Point(246, 84);
-            this.txtDenda.Name = "txtDenda";
-            this.txtDenda.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDenda.Size = new System.Drawing.Size(268, 24);
-            this.txtDenda.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(37, 89);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 16);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Denda";
-            // 
             // gpbOperation
             // 
             this.gpbOperation.Controls.Add(this.btnPrint);
@@ -282,14 +286,14 @@
             this.gpbOperation.TabStop = false;
             this.gpbOperation.Text = "Operation";
             // 
-            // btnCancel
+            // btnPrint
             // 
-            this.btnCancel.Location = new System.Drawing.Point(388, 19);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(155, 49);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnPrint.Location = new System.Drawing.Point(23, 19);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(155, 49);
+            this.btnPrint.TabIndex = 5;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -299,15 +303,17 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnPrint
+            // btnCancel
             // 
-            this.btnPrint.Location = new System.Drawing.Point(23, 19);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(155, 49);
-            this.btnPrint.TabIndex = 5;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(388, 19);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(155, 49);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmPelunasan
             // 
@@ -321,6 +327,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmPelunasan";
             this.Text = "Formulir Bukti Pelunasan";
+            this.Load += new System.EventHandler(this.frmPelunasan_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.gpbKontrakKerja.ResumeLayout(false);

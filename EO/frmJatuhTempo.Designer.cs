@@ -36,17 +36,17 @@
             this.cboSuratKontrak = new System.Windows.Forms.ComboBox();
             this.lblIDCustomer = new System.Windows.Forms.Label();
             this.gpbClient = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNoTelepon = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtIdClient = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtAlamat = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNoTelepon = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.gpbOperation = new System.Windows.Forms.GroupBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
@@ -93,6 +93,7 @@
             // 
             this.txtTglJatuhTempo.Location = new System.Drawing.Point(200, 51);
             this.txtTglJatuhTempo.Name = "txtTglJatuhTempo";
+            this.txtTglJatuhTempo.ReadOnly = true;
             this.txtTglJatuhTempo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTglJatuhTempo.Size = new System.Drawing.Size(314, 24);
             this.txtTglJatuhTempo.TabIndex = 7;
@@ -114,6 +115,7 @@
             this.cboSuratKontrak.Name = "cboSuratKontrak";
             this.cboSuratKontrak.Size = new System.Drawing.Size(314, 26);
             this.cboSuratKontrak.TabIndex = 5;
+            this.cboSuratKontrak.SelectedIndexChanged += new System.EventHandler(this.cboSuratKontrak_SelectedIndexChanged);
             // 
             // lblIDCustomer
             // 
@@ -145,10 +147,69 @@
             this.gpbClient.TabStop = false;
             this.gpbClient.Text = "Client";
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(200, 177);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtEmail.Size = new System.Drawing.Size(314, 24);
+            this.txtEmail.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(37, 182);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 16);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Email";
+            // 
+            // txtNoTelepon
+            // 
+            this.txtNoTelepon.Location = new System.Drawing.Point(200, 146);
+            this.txtNoTelepon.Name = "txtNoTelepon";
+            this.txtNoTelepon.ReadOnly = true;
+            this.txtNoTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNoTelepon.Size = new System.Drawing.Size(314, 24);
+            this.txtNoTelepon.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(37, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 16);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Nomor Telepon";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(200, 81);
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.ReadOnly = true;
+            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtAlamat.Size = new System.Drawing.Size(314, 58);
+            this.txtAlamat.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(37, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Alamat";
+            // 
             // txtIdClient
             // 
             this.txtIdClient.Location = new System.Drawing.Point(200, 19);
             this.txtIdClient.Name = "txtIdClient";
+            this.txtIdClient.ReadOnly = true;
             this.txtIdClient.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtIdClient.Size = new System.Drawing.Size(314, 24);
             this.txtIdClient.TabIndex = 11;
@@ -157,6 +218,7 @@
             // 
             this.txtNama.Location = new System.Drawing.Point(200, 51);
             this.txtNama.Name = "txtNama";
+            this.txtNama.ReadOnly = true;
             this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNama.Size = new System.Drawing.Size(314, 24);
             this.txtNama.TabIndex = 7;
@@ -191,61 +253,6 @@
             this.panel1.Size = new System.Drawing.Size(584, 435);
             this.panel1.TabIndex = 4;
             // 
-            // txtAlamat
-            // 
-            this.txtAlamat.Location = new System.Drawing.Point(200, 81);
-            this.txtAlamat.Multiline = true;
-            this.txtAlamat.Name = "txtAlamat";
-            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtAlamat.Size = new System.Drawing.Size(314, 58);
-            this.txtAlamat.TabIndex = 13;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Alamat";
-            // 
-            // txtNoTelepon
-            // 
-            this.txtNoTelepon.Location = new System.Drawing.Point(200, 146);
-            this.txtNoTelepon.Name = "txtNoTelepon";
-            this.txtNoTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNoTelepon.Size = new System.Drawing.Size(314, 24);
-            this.txtNoTelepon.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 16);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Nomor Telepon";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(200, 177);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEmail.Size = new System.Drawing.Size(314, 24);
-            this.txtEmail.TabIndex = 17;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 182);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 16);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Email";
-            // 
             // gpbOperation
             // 
             this.gpbOperation.Controls.Add(this.btnClose);
@@ -265,6 +272,7 @@
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmJatuhTempo
             // 
@@ -275,6 +283,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmJatuhTempo";
             this.Text = "Formulir Jatuh Tempo";
+            this.Load += new System.EventHandler(this.frmJatuhTempo_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.gpbKontrakKerja.ResumeLayout(false);
