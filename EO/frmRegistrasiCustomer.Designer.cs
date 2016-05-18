@@ -40,6 +40,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.txtIdCustomer = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +67,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtIdCustomer);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtNoTelepon);
@@ -75,12 +79,12 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 71);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(584, 202);
+            this.panel1.Size = new System.Drawing.Size(584, 241);
             this.panel1.TabIndex = 1;
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(211, 22);
+            this.txtNama.Location = new System.Drawing.Point(211, 43);
             this.txtNama.Name = "txtNama";
             this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNama.Size = new System.Drawing.Size(314, 20);
@@ -90,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(48, 23);
+            this.label1.Location = new System.Drawing.Point(48, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 8;
@@ -98,7 +102,7 @@
             // 
             // txtAlamat
             // 
-            this.txtAlamat.Location = new System.Drawing.Point(211, 54);
+            this.txtAlamat.Location = new System.Drawing.Point(211, 75);
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -109,7 +113,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 55);
+            this.label2.Location = new System.Drawing.Point(48, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 10;
@@ -117,7 +121,7 @@
             // 
             // txtNoTelepon
             // 
-            this.txtNoTelepon.Location = new System.Drawing.Point(211, 123);
+            this.txtNoTelepon.Location = new System.Drawing.Point(211, 144);
             this.txtNoTelepon.Name = "txtNoTelepon";
             this.txtNoTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNoTelepon.Size = new System.Drawing.Size(314, 20);
@@ -127,7 +131,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 124);
+            this.label3.Location = new System.Drawing.Point(48, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 16);
             this.label3.TabIndex = 12;
@@ -135,7 +139,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(211, 152);
+            this.txtEmail.Location = new System.Drawing.Point(211, 173);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtEmail.Size = new System.Drawing.Size(314, 20);
@@ -145,7 +149,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 153);
+            this.label4.Location = new System.Drawing.Point(48, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 14;
@@ -154,18 +158,37 @@
             // btnRegister
             // 
             this.btnRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnRegister.Location = new System.Drawing.Point(0, 274);
+            this.btnRegister.Location = new System.Drawing.Point(0, 318);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(584, 51);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // txtIdCustomer
+            // 
+            this.txtIdCustomer.Location = new System.Drawing.Point(211, 15);
+            this.txtIdCustomer.Name = "txtIdCustomer";
+            this.txtIdCustomer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtIdCustomer.Size = new System.Drawing.Size(124, 20);
+            this.txtIdCustomer.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(48, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 16);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "ID Customer";
             // 
             // frmRegistrasiCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 325);
+            this.ClientSize = new System.Drawing.Size(584, 369);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlHeader);
@@ -193,5 +216,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.TextBox txtIdCustomer;
+        private System.Windows.Forms.Label label5;
     }
 }

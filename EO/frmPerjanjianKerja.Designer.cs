@@ -31,22 +31,22 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblIDCustomer = new System.Windows.Forms.Label();
-            this.txtNama = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtAlamat = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtTelepon = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpBuatSurat = new System.Windows.Forms.DateTimePicker();
-            this.dtpAcara = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpJatuhTempo = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtBiaya = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dtpJatuhTempo = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpAcara = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtpBuatSurat = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTelepon = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboIdCustomer = new System.Windows.Forms.ComboBox();
+            this.lblIDCustomer = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
@@ -89,136 +89,12 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtNama);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cboIdCustomer);
             this.panel1.Controls.Add(this.lblIDCustomer);
             this.panel1.Location = new System.Drawing.Point(0, 71);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 317);
             this.panel1.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(314, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // lblIDCustomer
-            // 
-            this.lblIDCustomer.AutoSize = true;
-            this.lblIDCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDCustomer.Location = new System.Drawing.Point(41, 25);
-            this.lblIDCustomer.Name = "lblIDCustomer";
-            this.lblIDCustomer.Size = new System.Drawing.Size(81, 16);
-            this.lblIDCustomer.TabIndex = 2;
-            this.lblIDCustomer.Text = "ID Customer";
-            // 
-            // txtNama
-            // 
-            this.txtNama.Location = new System.Drawing.Point(202, 52);
-            this.txtNama.Name = "txtNama";
-            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNama.Size = new System.Drawing.Size(314, 20);
-            this.txtNama.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nama";
-            // 
-            // txtAlamat
-            // 
-            this.txtAlamat.Location = new System.Drawing.Point(202, 80);
-            this.txtAlamat.Multiline = true;
-            this.txtAlamat.Name = "txtAlamat";
-            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtAlamat.Size = new System.Drawing.Size(314, 58);
-            this.txtAlamat.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Alamat";
-            // 
-            // txtTelepon
-            // 
-            this.txtTelepon.Location = new System.Drawing.Point(202, 144);
-            this.txtTelepon.Name = "txtTelepon";
-            this.txtTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTelepon.Size = new System.Drawing.Size(314, 20);
-            this.txtTelepon.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Telepon";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Tanggal Buat Surat";
-            // 
-            // dtpBuatSurat
-            // 
-            this.dtpBuatSurat.Location = new System.Drawing.Point(202, 170);
-            this.dtpBuatSurat.Name = "dtpBuatSurat";
-            this.dtpBuatSurat.Size = new System.Drawing.Size(200, 20);
-            this.dtpBuatSurat.TabIndex = 11;
-            // 
-            // dtpAcara
-            // 
-            this.dtpAcara.Location = new System.Drawing.Point(202, 199);
-            this.dtpAcara.Name = "dtpAcara";
-            this.dtpAcara.Size = new System.Drawing.Size(200, 20);
-            this.dtpAcara.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 203);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Tanggal Acara";
-            // 
-            // dtpJatuhTempo
-            // 
-            this.dtpJatuhTempo.Location = new System.Drawing.Point(202, 227);
-            this.dtpJatuhTempo.Name = "dtpJatuhTempo";
-            this.dtpJatuhTempo.Size = new System.Drawing.Size(200, 20);
-            this.dtpJatuhTempo.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Tanggal Jatuh Tempo";
             // 
             // txtBiaya
             // 
@@ -238,6 +114,134 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Biaya";
             // 
+            // dtpJatuhTempo
+            // 
+            this.dtpJatuhTempo.Location = new System.Drawing.Point(202, 227);
+            this.dtpJatuhTempo.Name = "dtpJatuhTempo";
+            this.dtpJatuhTempo.Size = new System.Drawing.Size(200, 20);
+            this.dtpJatuhTempo.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(41, 231);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Tanggal Jatuh Tempo";
+            // 
+            // dtpAcara
+            // 
+            this.dtpAcara.Location = new System.Drawing.Point(202, 199);
+            this.dtpAcara.Name = "dtpAcara";
+            this.dtpAcara.Size = new System.Drawing.Size(200, 20);
+            this.dtpAcara.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(41, 203);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Tanggal Acara";
+            // 
+            // dtpBuatSurat
+            // 
+            this.dtpBuatSurat.Location = new System.Drawing.Point(202, 170);
+            this.dtpBuatSurat.Name = "dtpBuatSurat";
+            this.dtpBuatSurat.Size = new System.Drawing.Size(200, 20);
+            this.dtpBuatSurat.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(41, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Tanggal Buat Surat";
+            // 
+            // txtTelepon
+            // 
+            this.txtTelepon.Location = new System.Drawing.Point(202, 144);
+            this.txtTelepon.Name = "txtTelepon";
+            this.txtTelepon.ReadOnly = true;
+            this.txtTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTelepon.Size = new System.Drawing.Size(314, 20);
+            this.txtTelepon.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(41, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Telepon";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(202, 80);
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.ReadOnly = true;
+            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtAlamat.Size = new System.Drawing.Size(314, 58);
+            this.txtAlamat.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(41, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Alamat";
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(202, 52);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.ReadOnly = true;
+            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNama.Size = new System.Drawing.Size(314, 20);
+            this.txtNama.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nama";
+            // 
+            // cboIdCustomer
+            // 
+            this.cboIdCustomer.FormattingEnabled = true;
+            this.cboIdCustomer.Location = new System.Drawing.Point(202, 24);
+            this.cboIdCustomer.Name = "cboIdCustomer";
+            this.cboIdCustomer.Size = new System.Drawing.Size(314, 21);
+            this.cboIdCustomer.TabIndex = 3;
+            this.cboIdCustomer.SelectedIndexChanged += new System.EventHandler(this.cboIdCustomer_SelectedIndexChanged);
+            // 
+            // lblIDCustomer
+            // 
+            this.lblIDCustomer.AutoSize = true;
+            this.lblIDCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIDCustomer.Location = new System.Drawing.Point(41, 25);
+            this.lblIDCustomer.Name = "lblIDCustomer";
+            this.lblIDCustomer.Size = new System.Drawing.Size(81, 16);
+            this.lblIDCustomer.TabIndex = 2;
+            this.lblIDCustomer.Text = "ID Customer";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSave);
@@ -255,6 +259,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmPerjanjianKerja
             // 
@@ -266,6 +271,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmPerjanjianKerja";
             this.Text = "frmPerjanjianKerja";
+            this.Load += new System.EventHandler(this.frmPerjanjianKerja_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -280,7 +286,7 @@
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboIdCustomer;
         private System.Windows.Forms.Label lblIDCustomer;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Label label1;
