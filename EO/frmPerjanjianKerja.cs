@@ -77,7 +77,7 @@ namespace EO
             String tglAcara = dtpAcara.Text;
             String tglJatuhTempo = dtpJatuhTempo.Text;
             int biaya = Int32.Parse(txtBiaya.Text);
-
+            
             try
             {
                 String cbo = cboIdCustomer.Text;
@@ -97,6 +97,8 @@ namespace EO
 
                 comm.ExecuteNonQuery();
                 conn.Close();
+
+                MessageBox.Show("Form berhasil di simpan!");
             }
             catch (Exception ex)
             {
@@ -115,9 +117,6 @@ namespace EO
                     iDataReader.Dispose();
                 }
             }
-
-
-
         }
 
         private void cboIdCustomer_SelectedIndexChanged(object sender, EventArgs e)

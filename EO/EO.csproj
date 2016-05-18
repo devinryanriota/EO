@@ -68,6 +68,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainInterface.Designer.cs">
+      <DependentUpon>frmMainInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPelunasan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainInterface.resx">
+      <DependentUpon>frmMainInterface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPelunasan.resx">
       <DependentUpon>frmPelunasan.cs</DependentUpon>
