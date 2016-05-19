@@ -393,7 +393,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 750);
+            this.ClientSize = new System.Drawing.Size(584, 563);
             this.Controls.Add(this.cboIDKontrakKerja);
             this.Controls.Add(this.lblClient);
             this.Controls.Add(this.lblUser);

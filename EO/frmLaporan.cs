@@ -104,6 +104,10 @@ namespace EO
             }
             finally
             {
+                if(conn != null)
+                {
+                    conn.Close();
+                }
 
                 if (iDataReader != null)
                 {
@@ -161,6 +165,10 @@ namespace EO
             }
             finally
             {
+                if(conn != null)
+                {
+                    conn.Close();
+                }
 
                 if (iDataReader != null)
                 {
@@ -222,6 +230,10 @@ namespace EO
             }
             finally
             {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
 
                 if (iDataReader != null)
                 {
