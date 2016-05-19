@@ -31,10 +31,10 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
@@ -72,24 +72,6 @@
             this.panel1.Size = new System.Drawing.Size(384, 118);
             this.panel1.TabIndex = 3;
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(102, 29);
-            this.txtID.Name = "txtID";
-            this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtID.Size = new System.Drawing.Size(253, 20);
-            this.txtID.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ID";
-            // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(102, 66);
@@ -108,6 +90,24 @@
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Password";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(102, 29);
+            this.txtID.Name = "txtID";
+            this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtID.Size = new System.Drawing.Size(253, 20);
+            this.txtID.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "ID";
             // 
             // panel2
             // 
@@ -138,6 +138,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmLogin";
             this.Text = "Login Karyawan";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.panel1.ResumeLayout(false);

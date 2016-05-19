@@ -36,6 +36,8 @@
             this.btnPembayaranDP = new System.Windows.Forms.Button();
             this.btnJatuhTempo = new System.Windows.Forms.Button();
             this.btnBuktiPelunasan = new System.Windows.Forms.Button();
+            this.btnSuratPerizinan = new System.Windows.Forms.Button();
+            this.btnLaporan = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +69,7 @@
             this.btnRegisterCustomer.TabIndex = 3;
             this.btnRegisterCustomer.Text = "Customer";
             this.btnRegisterCustomer.UseVisualStyleBackColor = true;
+            this.btnRegisterCustomer.Click += new System.EventHandler(this.btnRegisterCustomer_Click);
             // 
             // btnRancanganCustomer
             // 
@@ -77,6 +80,7 @@
             this.btnRancanganCustomer.TabIndex = 4;
             this.btnRancanganCustomer.Text = "Rancangan Customer";
             this.btnRancanganCustomer.UseVisualStyleBackColor = true;
+            this.btnRancanganCustomer.Click += new System.EventHandler(this.btnRancanganCustomer_Click);
             // 
             // btnPerjanjianKerja
             // 
@@ -87,6 +91,7 @@
             this.btnPerjanjianKerja.TabIndex = 5;
             this.btnPerjanjianKerja.Text = "Perjanjian Kerja";
             this.btnPerjanjianKerja.UseVisualStyleBackColor = true;
+            this.btnPerjanjianKerja.Click += new System.EventHandler(this.btnPerjanjianKerja_Click);
             // 
             // btnPembayaranDP
             // 
@@ -97,6 +102,7 @@
             this.btnPembayaranDP.TabIndex = 6;
             this.btnPembayaranDP.Text = "Pembayaran DP";
             this.btnPembayaranDP.UseVisualStyleBackColor = true;
+            this.btnPembayaranDP.Click += new System.EventHandler(this.btnPembayaranDP_Click);
             // 
             // btnJatuhTempo
             // 
@@ -107,6 +113,7 @@
             this.btnJatuhTempo.TabIndex = 7;
             this.btnJatuhTempo.Text = "Jatuh Tempo";
             this.btnJatuhTempo.UseVisualStyleBackColor = true;
+            this.btnJatuhTempo.Click += new System.EventHandler(this.btnJatuhTempo_Click);
             // 
             // btnBuktiPelunasan
             // 
@@ -117,12 +124,37 @@
             this.btnBuktiPelunasan.TabIndex = 8;
             this.btnBuktiPelunasan.Text = "Bukti Pelunasan";
             this.btnBuktiPelunasan.UseVisualStyleBackColor = true;
+            this.btnBuktiPelunasan.Click += new System.EventHandler(this.btnBuktiPelunasan_Click);
+            // 
+            // btnSuratPerizinan
+            // 
+            this.btnSuratPerizinan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuratPerizinan.Location = new System.Drawing.Point(42, 327);
+            this.btnSuratPerizinan.Name = "btnSuratPerizinan";
+            this.btnSuratPerizinan.Size = new System.Drawing.Size(205, 62);
+            this.btnSuratPerizinan.TabIndex = 9;
+            this.btnSuratPerizinan.Text = "Surat Perizinan";
+            this.btnSuratPerizinan.UseVisualStyleBackColor = true;
+            this.btnSuratPerizinan.Click += new System.EventHandler(this.btnSuratPerizinan_Click);
+            // 
+            // btnLaporan
+            // 
+            this.btnLaporan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLaporan.Location = new System.Drawing.Point(328, 327);
+            this.btnLaporan.Name = "btnLaporan";
+            this.btnLaporan.Size = new System.Drawing.Size(205, 62);
+            this.btnLaporan.TabIndex = 10;
+            this.btnLaporan.Text = "Laporan";
+            this.btnLaporan.UseVisualStyleBackColor = true;
+            this.btnLaporan.Click += new System.EventHandler(this.btnLaporan_Click);
             // 
             // frmMainInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.btnLaporan);
+            this.Controls.Add(this.btnSuratPerizinan);
             this.Controls.Add(this.btnBuktiPelunasan);
             this.Controls.Add(this.btnJatuhTempo);
             this.Controls.Add(this.btnPembayaranDP);
@@ -132,6 +164,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmMainInterface";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.frmMainInterface_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.ResumeLayout(false);
@@ -148,5 +181,7 @@
         private System.Windows.Forms.Button btnPembayaranDP;
         private System.Windows.Forms.Button btnJatuhTempo;
         private System.Windows.Forms.Button btnBuktiPelunasan;
+        private System.Windows.Forms.Button btnSuratPerizinan;
+        private System.Windows.Forms.Button btnLaporan;
     }
 }

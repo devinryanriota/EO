@@ -51,5 +51,10 @@ namespace EO
             this.Close();
 
         }
+
+        private void frmRegistrasiCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

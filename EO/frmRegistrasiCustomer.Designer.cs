@@ -31,17 +31,17 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtNama = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtAlamat = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNoTelepon = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.txtIdCustomer = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNoTelepon = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,23 +82,59 @@
             this.panel1.Size = new System.Drawing.Size(584, 241);
             this.panel1.TabIndex = 1;
             // 
-            // txtNama
+            // txtIdCustomer
             // 
-            this.txtNama.Location = new System.Drawing.Point(211, 43);
-            this.txtNama.Name = "txtNama";
-            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNama.Size = new System.Drawing.Size(314, 20);
-            this.txtNama.TabIndex = 9;
+            this.txtIdCustomer.Location = new System.Drawing.Point(211, 15);
+            this.txtIdCustomer.Name = "txtIdCustomer";
+            this.txtIdCustomer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtIdCustomer.Size = new System.Drawing.Size(124, 20);
+            this.txtIdCustomer.TabIndex = 17;
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(48, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Nama";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(48, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 16);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "ID Customer";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(211, 173);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtEmail.Size = new System.Drawing.Size(314, 20);
+            this.txtEmail.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(48, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 16);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Email";
+            // 
+            // txtNoTelepon
+            // 
+            this.txtNoTelepon.Location = new System.Drawing.Point(211, 144);
+            this.txtNoTelepon.Name = "txtNoTelepon";
+            this.txtNoTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNoTelepon.Size = new System.Drawing.Size(314, 20);
+            this.txtNoTelepon.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(48, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Nomor Telepon";
             // 
             // txtAlamat
             // 
@@ -119,41 +155,23 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Alamat";
             // 
-            // txtNoTelepon
+            // txtNama
             // 
-            this.txtNoTelepon.Location = new System.Drawing.Point(211, 144);
-            this.txtNoTelepon.Name = "txtNoTelepon";
-            this.txtNoTelepon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNoTelepon.Size = new System.Drawing.Size(314, 20);
-            this.txtNoTelepon.TabIndex = 13;
+            this.txtNama.Location = new System.Drawing.Point(211, 43);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNama.Size = new System.Drawing.Size(314, 20);
+            this.txtNama.TabIndex = 9;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Nomor Telepon";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(211, 173);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEmail.Size = new System.Drawing.Size(314, 20);
-            this.txtEmail.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 16);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Email";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nama";
             // 
             // btnRegister
             // 
@@ -166,24 +184,6 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // txtIdCustomer
-            // 
-            this.txtIdCustomer.Location = new System.Drawing.Point(211, 15);
-            this.txtIdCustomer.Name = "txtIdCustomer";
-            this.txtIdCustomer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtIdCustomer.Size = new System.Drawing.Size(124, 20);
-            this.txtIdCustomer.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 16);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "ID Customer";
-            // 
             // frmRegistrasiCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,6 +194,7 @@
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmRegistrasiCustomer";
             this.Text = "Form Registrasi Customer";
+            this.Load += new System.EventHandler(this.frmRegistrasiCustomer_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.panel1.ResumeLayout(false);

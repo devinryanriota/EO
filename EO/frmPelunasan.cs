@@ -140,6 +140,10 @@ namespace EO
             String idKontrak = cboSuratKontrak.Text;
             int pembayaran = Int32.Parse(txtPembayaran.Text);
             int denda = Int32.Parse(txtDenda.Text);
+
+            DateTime now = DateTime.Now;
+            String date = now.DayOfWeek.ToString() + ", " + now.ToString("MMMM") + " " + now.ToString("dd") + ", " + now.ToString("yyyy");
+
             try
             {
                 this.conn = new MySqlConnection(connString);
@@ -149,6 +153,17 @@ namespace EO
                 comm.CommandText = "UPDATE payment SET bayar_lunas = @a, denda = @b WHERE id_kontrak = '" + idKontrak + "'";
                 comm.Parameters.AddWithValue("@a", pembayaran);
                 comm.Parameters.AddWithValue("@b", denda);
+
+                comm.ExecuteNonQuery();
+                
+                //insert into transaksi
+                //insert into transaksi
+                comm = conn.CreateCommand();
+                comm.CommandText = "INSERT INTO transaksi(id_kontrak,jenis_transaksi, tanggal_transaksi, jumlah_transaksi) VALUES(@a, @b, @c,@d)";
+                comm.Parameters.AddWithValue("@a", idKontrak);
+                comm.Parameters.AddWithValue("@b", "PELUNASAN");
+                comm.Parameters.AddWithValue("@c", date);
+                comm.Parameters.AddWithValue("@d", pembayaran);
 
                 comm.ExecuteNonQuery();
                 conn.Close();

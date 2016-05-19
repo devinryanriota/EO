@@ -52,15 +52,21 @@ namespace EO
                 while (iDataReader.Read())
                 {
                     idDB = iDataReader.GetString(0);
+
                     nameDB = iDataReader.GetString(1);
                     passwordDB = iDataReader.GetString(2);
                 }
 
-                if (password == passwordDB)
+                if (password.Equals(passwordDB))
                 {
                     MessageBox.Show("Login Success! Welcome " + nameDB);
+                    this.Hide();
+                    frmMainInterface formMainInterface = new frmMainInterface(nameDB);
+                    formMainInterface.ShowDialog();
+
                 }
                 else MessageBox.Show("Wrong ID/Password Combination!");
+                
             }
             catch(Exception ex)
             {
@@ -79,6 +85,11 @@ namespace EO
                     iDataReader.Dispose();
                 }
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -56,11 +56,29 @@
     <Compile Include="frmBuktiDP.Designer.cs">
       <DependentUpon>frmBuktiDP.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerEdit.Designer.cs">
+      <DependentUpon>frmCustomerEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmJatuhTempo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmJatuhTempo.Designer.cs">
       <DependentUpon>frmJatuhTempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaporan.Designer.cs">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -98,13 +116,28 @@
     <Compile Include="frmRegistrasiCustomer.Designer.cs">
       <DependentUpon>frmRegistrasiCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSuratPerizinan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuratPerizinan.Designer.cs">
+      <DependentUpon>frmSuratPerizinan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBuktiDP.resx">
       <DependentUpon>frmBuktiDP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerEdit.resx">
+      <DependentUpon>frmCustomerEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmJatuhTempo.resx">
       <DependentUpon>frmJatuhTempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaporan.resx">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -123,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrasiCustomer.resx">
       <DependentUpon>frmRegistrasiCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuratPerizinan.resx">
+      <DependentUpon>frmSuratPerizinan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

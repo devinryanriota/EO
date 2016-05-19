@@ -146,18 +146,34 @@ namespace EO
             int biaya = Int32.Parse(txtBiaya.Text);
             int bayarDp = Int32.Parse(txtPembayaran.Text);
 
+            DateTime now = DateTime.Now;
+            String date = now.DayOfWeek.ToString() + ", " + now.ToString("MMMM") + " " + now.ToString("dd") + ", " + now.ToString("yyyy");
+           
             try
             {
                 this.conn = new MySqlConnection(connString);
                 conn.Open();
 
+                //insert into payment
                 comm = conn.CreateCommand();
-                comm.CommandText = "INSERT INTO payment(id_kontrak, biaya, bayar_dp) VALUES(@a, @b, @c)";
+                comm.CommandText = "INSERT INTO payment(id_kontrak, biaya, bayar_dp,tanggal_pelunasan) VALUES(@a, @b, @c,@d)";
                 comm.Parameters.AddWithValue("@a", idKontrak);
                 comm.Parameters.AddWithValue("@b", biaya);
                 comm.Parameters.AddWithValue("@c", bayarDp);
+                comm.Parameters.AddWithValue("@d", date);
 
                 comm.ExecuteNonQuery();
+
+                //insert into transaksi
+                comm = conn.CreateCommand();
+                comm.CommandText = "INSERT INTO transaksi(id_kontrak,jenis_transaksi, tanggal_transaksi, jumlah_transaksi) VALUES(@a, @b, @c,@d)";
+                comm.Parameters.AddWithValue("@a", idKontrak);
+                comm.Parameters.AddWithValue("@b", "DP");
+                comm.Parameters.AddWithValue("@c", date);
+                comm.Parameters.AddWithValue("@d", bayarDp);
+
+                comm.ExecuteNonQuery();
+
                 conn.Close();
                 MessageBox.Show("Form berhasil di isi!");
             }
